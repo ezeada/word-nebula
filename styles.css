@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.word {
+  position: absolute;
+  transition: color 0.3s ease, transform 0.3s ease, left 0.3s ease, top 0.3s ease; /* Add left and top transitions */
+}
+
+.word:hover {
+  color: red;
+  transform: scale(6); /* Increase size on hover */
+}
+
+.outside {
+  z-index: 100; /* Ensure outside words are on top */
+}
